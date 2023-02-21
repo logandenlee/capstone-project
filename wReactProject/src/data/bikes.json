@@ -1,0 +1,18 @@
+[
+{"id":1,"type":"sport","img":"img/sport.jpg","year":"2018","name":"Kawasaki ZX6R","price":6500,"description":"quick and stealth!","miles":"12000"},
+{"id":2,"type":"sport","img":"img/gsxr600.jpg","year":"2017","name":"Suzuki GXSR-600","price":5500,"description":"Clean fast bike!","miles":"15000"},
+{"id":3,"type":"sport","img":"img/S1000RR.jpg","year":"2014","name":"BMW S1000RR","price":13000,"description":"Known as one of the best 1000cc bikes","miles":"11000"},
+{"id":4,"type":"other","img":"img/grom.jpg","year":"2020","name":"Honda Grom","price":4000,"description":"a little heavy, but very smooth riding!","miles":"4000"},
+{"id":5,"type":"cruiser","img":"img/goldwing.jpg","year":"2010","name":"Honda Goldwing","price":5500,"description":"a little heavy, but very smooth riding!","miles":"9000"},
+{"id":6,"type":"adventure","img":"img/africaTwin.jpg","year":"2010","name":"Honda Africa Twin","price":3500,"description":"great for an adventure","miles":"12000"},
+{"id":7,"type":"adventure","img":"img/f850.jpg","year":"2010","name":"BMW F850gs adventure","price":9000,"description":"adventure awaits on this great of a bike","miles":"15000"},
+{
+    "id":8,
+    "type":"cruiser",
+    "img":"img/harley1100.jpg",
+    "year":"1987",
+    "name":"Harley XLH1100",
+    "price":9000,
+    "description":"a classic","miles":"20220"
+}
+]

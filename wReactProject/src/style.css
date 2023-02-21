@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+}
+
+#form2 {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    background-color: #fff;
+    max-width: fit-content;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.submit-bar{
+    text-align: right;
+}
+
+.submit-bar ol{
+    list-style: none;
+    display: inline-flex;
+}
+
+.submit-bar ol li{
+    background-color: cadetblue;
+    margin: 5px;
+    padding: 5px;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.submit-bar ol li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bar{
+    background-color: rgb(153, 89, 166);
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bar ul li:hover{
+    background-color: rgb(124, 31, 145);
+    border-radius: 3px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+.sub-menu-about{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-about{
+    display: block;
+    position: absolute;
+    background-color: cadetblue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-about ul{
+    display: block;
+    margin: 10px
+}
+
+.menu-bar ul li:hover .sub-menu-about ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-about ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-about ul li a:hover{
+    color:aqua;
+}
+
+.logo{
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+}
+.title {
+    text-align: center;
+    font-family: "Kaushan Script", fantasy;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 4rem;
+    color: black
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: black
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: black
+}
+
+.homePage {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.aboutUsPage {
+    text-align: center;
+    margin: 25px;
+    padding-top: 25px;
+
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control p{
+    display:grid;
+    text-align:justify;
+}
+
+.form-control label {
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+        }
+        
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.bikeList{
+    display: flexbox;
+}
+
+.bikeName{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card {
+    display: inline-block;
+    flex-basis: 200px;
+    margin: 30px 20px;
+    display: flexbox;
+}
+
+.card-img-top {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.card-body {
+    display: flexbox;
+}
+
+.card-text {
+    display: flex;
+    list-style: decimal;
+    text-align: left;
+}
+
+.filter-container button{
+    margin-right: 1rem;
+    min-width: 5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:0.5rem 0.5rem;
+    border: none;
+    background-color: white;
+    color:darkgrey;
+    border-radius: 1rem;
+    border: 2px solid darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-container button.active {
+    background-color:blue;
+    color: white;
+}
+
+
+.interestButton button{
+    margin-right: 1rem;
+    min-width: 5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:0.5rem 0.5rem;
+    border: none;
+    background-color: silver;
+    color: black;
+    border-radius: 1rem;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width:0px) {
+    #social-links {
+        display: block;
+
+    }
+
+    body {
+        background-color: gray;
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+      }
+      nav a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:840px) {
+    body {
+        background-color: gray;
+        background-position: center;
+        background-position: cover;
+        
+    }
+
+    html {
+        height: 100%;
+    }
+
+    footer {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    main {
+        text-shadow: 1px 1px #153c43;
+    }
+
+}
+
+@media (min-width:1080px) {
+    body {
+        background-color: gray;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:1200px) {
+    body {
+        background-color: gray;
+    }
+
+
+}

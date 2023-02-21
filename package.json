@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jest": "^29.4.3",
+    "live-server": "^1.2.2"
+  }
+}
