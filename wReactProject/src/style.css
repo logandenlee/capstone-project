@@ -252,85 +252,22 @@ h3 {
 }
 
 @media (min-width:0px) {
-    #social-links {
-        display: block;
-
-    }
-
-    body {
-        background-color: gray;
-    }
+    
 }
 
 @media (max-width:840px) {
-    body {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 10px;
-        position: sticky;
-        top: 0;
-      }
-      nav a {
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
+    
 }
 
 @media (min-width:840px) {
-    body {
-        background-color: gray;
-        background-position: center;
-        background-position: cover;
-        
-    }
-
-    html {
-        height: 100%;
-    }
-
-    footer {
-        display: block;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-    }
-
-    main {
-        text-shadow: 1px 1px #153c43;
-    }
+    
 
 }
 
 @media (min-width:1080px) {
-    body {
-        background-color: gray;
-    }
-
-    nav a {
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
+    
 }
 
 @media (min-width:1200px) {
-    body {
-        background-color: gray;
-    }
-
-
+   
 }
