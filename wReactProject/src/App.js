@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './pages/home';
 import Profile from './pages/profile';
 import AboutT from './pages/aboutTeam';
-import AboutC from './pages/aboutCompany'
+import FriendList from './pages/friendsList'
 import FormC from './pages/contactForm';
 import FormY from './pages/thankYou';
 
@@ -23,8 +23,8 @@ export function App() {
         case "/profile":
             component = <Profile />;
             break
-        case "/aboutCompany":
-            component = <AboutC />;
+        case "/friendsList":
+            component = <FriendList />;
             break
         case "/aboutTeam":
             component = <AboutT />;
@@ -41,7 +41,6 @@ export function App() {
     return (
         <>
             <section className="title">
-            
                 <h1>Gamer Changer</h1>
                 <br />
             </section>
