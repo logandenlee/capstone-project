@@ -7,7 +7,8 @@ export default function Profile() {
             <img src={profilePic} 
             alt="user" width="100"/>
             <h4>Minerz4lifes</h4>
-             <p>Steve Stonecutter</p>
+            <p>Steve Stonecutter</p>
+            
 
         </div>
         <div class="right">
