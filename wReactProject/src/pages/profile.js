@@ -1,5 +1,6 @@
 import profilePic from '../images/steve.jpg'
 
+
 export default function Profile() {
     return (
     <div class="wrapperTwo">
@@ -59,7 +60,7 @@ export default function Profile() {
                      </div>
                 </div>
             </div>
-            <button className="editProfile" onclick="">Edit Profile</button>
+                <a href='/editProfile'><button className="editProfile">Edit Profile</button></a>
         </div>
     </div>
     

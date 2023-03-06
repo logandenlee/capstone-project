@@ -121,6 +121,14 @@ a i{
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+#form3 {
+  background-color: #b1aeae;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 form {
   background-color: #fff;
   max-width: fit-content;
@@ -291,17 +299,17 @@ form {
 }
 
 .submit-bar ol li{
-    background-color: cadetblue;
+    background-color: rgb(113, 124, 124);
     margin: 5px;
     padding: 5px;
-    border-color: black;
+    border-color: rgb(235, 231, 231);
     border-radius: 3px;
 }
 
 .submit-bar ol li a{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: rgb(208, 207, 207);
 }
 
 

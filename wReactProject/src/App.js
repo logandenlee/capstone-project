@@ -7,7 +7,7 @@ import FriendList from './pages/friendsList'
 import FormC from './pages/contactForm';
 import FormY from './pages/thankYou';
 import logo from './images/logo.jpg';
-
+import Edit from './pages/editProfile';
 
 
 
@@ -36,6 +36,9 @@ export function App() {
             break
         case "/thankYou":
             component = <FormY />;
+            break
+        case "/editProfile":
+            component = <Edit />;
             break
         default:
             component = <Home />;
