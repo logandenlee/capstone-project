@@ -122,12 +122,121 @@ a i{
 }
 
 form {
-    background-color: #fff;
-    max-width: fit-content;
-    margin: 50px auto;
-    padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  max-width: fit-content;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+/*profile page*/
+.wrapperTwo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 750px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapperTwo .left{
+  width: 35%;
+  background: linear-gradient(to right,#9d1b55,#646c6c);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapperTwo .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapperTwo .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapperTwo .left p{
+  font-size: 12px;
+}
+
+.wrapperTwo .right{
+  width: 65%;
+  background: #b1aeae;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapperTwo .right .info,
+.wrapperTwo .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapperTwo .right .info h3,
+.wrapperTwo .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapperTwo .right .info_data,
+.wrapperTwo .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperTwo .right .info_data .data,
+.wrapperTwo .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapperTwo .right .info_data .data h4,
+.wrapperTwo .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapperTwo .right .info_data .data p,
+.wrapperTwo .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #2c2d2d;
+}
+
+.wrapperTwo .social_media ul{
+  display: flex;
+}
+
+.wrapperTwo .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapperTwo .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+
+.editProfile {
+  display: flex;
+  margin-left: 340px;
+}
+
+
+
 
 .submit-bar{
     text-align: right;
