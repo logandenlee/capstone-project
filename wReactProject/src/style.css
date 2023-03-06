@@ -135,9 +135,50 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 1000px;
+  display: flex;
+  margin-top: 50px;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.editProfile {
+  display: flex;
+  margin-left: 500px;
+}
+@media screen and (max-width: 1200px) {
+.wrapperTwo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 750px;
   display: flex;
+  margin-top: 50px;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.editProfile {
+  display: flex;
+  margin-left: 340px;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .wrapperTwo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    display: flex;
+    margin-top: 70px;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    
+  }
+  .editProfile {
+    display: flex;
+    margin-left: 250px;
+  }
 }
 
 .wrapperTwo .left{
@@ -230,10 +271,7 @@ form {
   font-size: 18px;
 }
 
-.editProfile {
-  display: flex;
-  margin-left: 340px;
-}
+
 
 
 
