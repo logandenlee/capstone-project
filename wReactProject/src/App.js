@@ -6,6 +6,7 @@ import AboutT from './pages/aboutTeam';
 import FriendList from './pages/friendsList'
 import FormC from './pages/contactForm';
 import FormY from './pages/thankYou';
+import logo from './images/logo.jpg';
 
 
 
@@ -42,7 +43,7 @@ export function App() {
     return (
         <>
             <section className="title">
-                <h1>Gamer Changer</h1>
+                <h1><div className="logoPic"><img  src={logo} alt="logo_picture"/></div>Gamer Changer</h1>
                 <br />
             </section>
             <Navbar />
