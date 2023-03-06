@@ -37,6 +37,20 @@ export default function ContactForm(){
                    placeholder=" Enter your email" 
                    onChange={(e) => setContactEmail(e.target.value)}/>
         </div>
+
+        <div class="form-control">
+                        <label for="comment">
+                            Time availabitiy
+                        </label>
+                        <p>Start Time</p>
+                        <input type="time"
+                            id="time"
+                            placeholder=" Enter a convenient time for playing" />
+                        <p>end Time</p>
+                        <input type="time"
+                            id="time"
+                            placeholder=" Enter a convenient time for playing" />
+                    </div>
   
         <div class="form-control">
             <label for="role" id="label-role">
@@ -44,14 +58,20 @@ export default function ContactForm(){
             </label>
              
 
-            <select name="role" id="role" onChange={(e) => setContactSelection(e.target.value)}>
-                <option value=""></option>
-                <option value="purchasing">buying</option>
-                <option value="selling">selling</option>
-                <option value="other">
-                    more information on Biker Boyz
-                </option>
-            </select>
+            <div className="genresSelection" name="role" id="role" onChange={(e) => setContactSelection(e.target.value)}>
+            <input type="radio" value="Male" name="gender" /> Role-play
+            <input type="radio" value="Female" name="gender" /> Survival
+            <input type="radio" value="Other" name="gender" /> FPS
+            <input type="radio" value="Other" name="gender" /> Stragrgy
+            <input type="radio" value="Other" name="gender" /> Racing
+            <input type="radio" value="Other" name="gender" /> Puzzle
+            <input type="radio" value="Other" name="gender" /> MMO
+            <input type="radio" value="Other" name="gender" /> Tactical
+            <input type="radio" value="Other" name="gender" /> Open-World
+            <input type="radio" value="Other" name="gender" /> Music
+            <input type="radio" value="Other" name="gender" /> Puzzle
+            <input type="radio" value="Other" name="gender" /> Simulation
+            </div>
         </div>
   
         <div class="form-control">
@@ -68,7 +88,7 @@ export default function ContactForm(){
         <nav className="submit-bar">
             <ol>
         <li class="active"><a href="/thankYouContact"><i class=""></i>Submit</a></li>
-        <li class="active"><a href="/home"><i class=""></i>Cancel</a></li>
+        <li class="active"><a href="/profile"><i class=""></i>Cancel</a></li>
         </ol>        
         </nav>
         

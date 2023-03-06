@@ -129,6 +129,12 @@ a i{
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.genresSelection input{
+  display: inline;
+  padding:10px;
+  margin-left: 15px;
+}
+
 form {
   background-color: #fff;
   max-width: fit-content;
