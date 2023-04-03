@@ -1,14 +1,16 @@
 import profilePic from '../images/steve.jpg'
-
+import editProfile from './editProfile.js'
 
 export default function Profile() {
+    var profileEmailPrint = localStorage.getItem("contactEmailStorage");
+    var profileNamePrint = localStorage.getItem("contactNameStorage");
     return (
     <div class="wrapperTwo">
         <div class="left">
             <img src={profilePic} 
             alt="user" width="100"/>
             <h4>Minerz4lifes</h4>
-            <p>Steve Stonecutter</p>
+            <p>{profileNamePrint}</p>
             
 
         </div>
@@ -18,7 +20,7 @@ export default function Profile() {
                 <div class="info_data">
                      <div class="data">
                         <h4>Email</h4>
-                        <p>steveMine@gmail.com</p>
+                        <p>{profileEmailPrint}</p>
                      </div>
                      <div class="data">
                        <h4>Accounts</h4>

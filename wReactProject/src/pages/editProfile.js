@@ -5,6 +5,7 @@ export default function ContactForm(){
     const[contactEmail, setContactEmail] = useState("");
     const[contactSelection, setContactSelection] = useState("");
     const[contactComment, setContactComment] = useState("");
+    const[contactGamertag, setContactGamertag] = useState("");
     localStorage.setItem("contactNameStorage", contactName);
     localStorage.setItem("contactEmailStorage", contactEmail);
     localStorage.setItem("contactSelectionStorage", contactSelection);
@@ -20,12 +21,22 @@ export default function ContactForm(){
   <form id="form3">
   <div class="form-control">
             <label for="name" id="label-name">
-                Gamer Tag:
+                Name:
             </label>
             <input type="text"
                    id="name"
                    placeholder=" Enter your name" 
                    onChange={(e) => setContactName(e.target.value)}/>
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Gamer Tag:
+            </label>
+            <input type="text"
+                   id="name"
+                   placeholder=" Enter your Gamer Tag" 
+                   onChange={(e) => setContactGamertag(e.target.value)}/>
         </div>
 
         <div class="form-control">
@@ -87,7 +98,7 @@ export default function ContactForm(){
         
         <nav className="submit-bar">
             <ol>
-        <li class="active"><a href="/thankYouContact"><i class=""></i>Submit</a></li>
+        <li class="active"><a href="/profile"><i class=""></i>Submit</a></li>
         <li class="active"><a href="/profile"><i class=""></i>Cancel</a></li>
         </ol>        
         </nav>
