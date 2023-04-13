@@ -88,6 +88,20 @@ form p a{
     transition: background 1s;
 }
 
+
+.submit-field button {
+    flex-basis: 70%;
+    width: 30%;
+    background: #3c00a0;
+    color: #fff;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
 .input-group{
     height: 280px;
 }
@@ -95,4 +109,10 @@ form p a{
 .button-field button.disabled{
     background: #eaeaea;
     color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 22px;
+    font-weight: 600;
 }
