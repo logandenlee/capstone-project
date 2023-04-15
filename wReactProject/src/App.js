@@ -10,8 +10,6 @@ import logo from './images/logo.jpg';
 import Edit from './pages/editProfile';
 
 
-
-
 export function App() {
 
     let component 

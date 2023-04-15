@@ -4,12 +4,13 @@ import editProfile from './editProfile.js'
 export default function Profile() {
     var profileEmailPrint = localStorage.getItem("contactEmailStorage");
     var profileNamePrint = localStorage.getItem("contactNameStorage");
+    var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
     return (
     <div class="wrapperTwo">
         <div class="left">
             <img src={profilePic} 
             alt="user" width="100"/>
-            <h4>Minerz4lifes</h4>
+            <h4>{profileGamertagPrint}</h4>
             <p>{profileNamePrint}</p>
             
 
@@ -24,7 +25,8 @@ export default function Profile() {
                      </div>
                      <div class="data">
                        <h4>Accounts</h4>
-                        <p>###-###-####</p>
+                        <p>Discord:</p>
+                        <p>Battle.net:</p>
                   </div>
                   <div class="data">
                        <h4>Status</h4>

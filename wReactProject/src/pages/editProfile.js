@@ -10,7 +10,7 @@ export default function ContactForm(){
     localStorage.setItem("contactEmailStorage", contactEmail);
     localStorage.setItem("contactSelectionStorage", contactSelection);
     localStorage.setItem("contactCommentStorage", contactComment);
-
+    localStorage.setItem("contactGamertagStorage", contactGamertag);
     return(
         <>
     

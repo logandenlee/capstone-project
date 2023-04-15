@@ -1,4 +1,4 @@
-import bikeData from '../data/bikes.json'
+import bikeData from '../data/friends.json'
 
 export function itemCard(props) {
     //const items = props.items;

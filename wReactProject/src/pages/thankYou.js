@@ -1,4 +1,4 @@
-import bikeData from '../data/bikes.json'
+import bikeData from '../data/friends.json'
 export default function thankYou() {
     var BOI = localStorage.getItem("bikeOfInterestStorage");
     var buyerNamePrint = localStorage.getItem("buyerNameStorage");

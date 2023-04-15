@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 
 export default function ContactForm(){
-    const[contactName, setContactName] = useState("");
-    const[contactEmail, setContactEmail] = useState("");
-    const[contactSelection, setContactSelection] = useState("");
-    const[contactComment, setContactComment] = useState("");
-    localStorage.setItem("contactNameStorage", contactName);
-    localStorage.setItem("contactEmailStorage", contactEmail);
-    localStorage.setItem("contactSelectionStorage", contactSelection);
-    localStorage.setItem("contactCommentStorage", contactComment);
+    
 
     return(
         <>
@@ -26,7 +19,7 @@ export default function ContactForm(){
             <input type="text"
                    id="name"
                    placeholder=" Enter your name" 
-                   onChange={(e) => setContactName(e.target.value)}/>
+                  />
         </div>
 
         <div class="form-control">
@@ -36,7 +29,7 @@ export default function ContactForm(){
             <input type="email"
                    id="email"
                    placeholder=" Enter your email" 
-                   onChange={(e) => setContactEmail(e.target.value)}/>
+                  />
         </div>
   
         <div class="form-control">
@@ -45,14 +38,7 @@ export default function ContactForm(){
             </label>
              
 
-            <select name="role" id="role" onChange={(e) => setContactSelection(e.target.value)}>
-                <option value=""></option>
-                <option value="purchasing">buying</option>
-                <option value="selling">selling</option>
-                <option value="other">
-                    more information on Biker Boyz
-                </option>
-            </select>
+            
         </div>
   
         <div class="form-control">
@@ -62,7 +48,7 @@ export default function ContactForm(){
  
             <textarea name="comment" id="comment"
                 placeholder="Enter your comment here"
-                onChange={(e) => setContactComment(e.target.value)}>
+                >
             </textarea>
         </div>
         
