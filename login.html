@@ -4,67 +4,61 @@
     <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
     <title> GameChanger - Login </title>
     <link rel="stylesheet" href="style2.css">
-    <script src="https://kit.fontawesome.com/b500bf30d6.js" crossorigin="anonymous"></script>
-    <script defer src="validation.js"></script>
 </head>
 
 <body>
-    <form id="form">
-    <form action="" method="GET">
-    <div class="form-box">
-        <h1 id="title">Sign Up</h1>
-            <div class="input-group">
-                <div class="input-field" id="usernameField">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Username">
-                </div>
+    <div class="container">
 
-             <div class="input-field" id="emailField">
-                 <i class="fa-solid fa-envelope"></i>
-                 <input type="email" placeholder="Email Address">
-              </div>
 
-            <div class="input-field">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
-            </div>
-            <p>Forgot Password? <a href="#"> Click Here</a></p>
-            </div>
-            <div class="button-field">
-                <button type="button" id="signUpButton">Sign Up</button>
-                <button type="button" id="signInButton" class="disabled">Sign In</button>
-            <p id="error" hidden></p>
-            </div>
-            <div class="submit-field">
-                <button type="submit">Submit</button>
-            </div>
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div> 
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div> 
+            <button class="form__button" type="submit">Submit</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
         </form>
+
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id ="signUpUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div> 
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div> 
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                <div class="form__input-error-message"></div>
+            </div> 
+            <button class="form__button" type="submit">Submit</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+
+
     </div>
-</div>
-</form>
-
-<script>
-    let signUpButton = document.getElementById("signUpButton");
-    let signInButton = document.getElementById("signInButton");
-    let emailField = document.getElementById("emailField");
-    let title = document.getElementById("title");
-
-    signInButton.onclick = function(){
-        emailField.style.maxHeight = "0";
-        title.innerHTML = "Sign In";
-        signUpButton.classList.add("disabled");
-        signInButton.classList.remove("disabled");
-    }
-
-    signUpButton.onclick = function(){
-        emailField.style.maxHeight = "60px";
-        title.innerHTML = "Sign Up";
-        signUpButton.classList.remove("disabled");
-        signInButton.classList.add("disabled");
-    }
-
-
-</script>
+    <script src="validation.js"></script>
 
 
 </body>
