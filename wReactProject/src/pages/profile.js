@@ -1,10 +1,10 @@
 import profilePic from '../images/steve.jpg'
-import editProfile from './editProfile.js'
 
 export default function Profile() {
     var profileEmailPrint = localStorage.getItem("contactEmailStorage");
     var profileNamePrint = localStorage.getItem("contactNameStorage");
     var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
+    var profileStatus = localStorage.getItem("statusStorage");
     return (
     <div class="wrapperTwo">
         <div class="left">
@@ -30,7 +30,7 @@ export default function Profile() {
                   </div>
                   <div class="data">
                        <h4>Status</h4>
-                        <p>Online</p>
+                        <p>{profileStatus}</p>
                   </div>
                 </div>
             </div>

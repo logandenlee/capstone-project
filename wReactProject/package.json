@@ -1,6 +1,7 @@
 {
   "name": "project-biker-boyz",
   "dependencies": {
+    "axios": "^0.24.0",
     "live": "^0.1.25-beta.0",
     "live-server": "^1.2.2",
     "react": "^17.0.2",
