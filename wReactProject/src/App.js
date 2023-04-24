@@ -47,10 +47,11 @@ export function App() {
                 <h1><div className="logoPic"><img  src={logo} alt="logo_picture"/></div>Gamer Changer</h1>
                 <br />
             </section>
-            <Navbar />
+            
             <section className="pageBody">
             {component}
             </section>
+            <Navbar />
         </>
     );
 }
