@@ -5,13 +5,15 @@ export default function ContactForm(){
     const[contactName, setContactName] = useState("");
     const[contactEmail, setContactEmail] = useState("");
     const[contactGamertag, setContactGamertag] = useState("");
-
     const[image, setImage] = useState("");
-    const[status,setStatus] = useState("")
-
+    const[status,setStatus] = useState("");
+    const[generes, setGeneres] = useState("");
+    const[generesTwo, setGeneresTwo] = useState("");
+    const[generesThree, setGeneresThree] = useState("");
     const[contactSelection, setContactSelection] = useState("");
     const[contactComment, setContactComment] = useState("");
 
+    let statusOptions = ["Online", "Offline"];
     
     useEffect(()=>{
         const data = window.localStorage.getItem("contactNameStorage");
@@ -36,9 +38,7 @@ export default function ContactForm(){
     useEffect(()=>{
         window.localStorage.setItem("contactGamertagStorage", contactGamertag);
     },[contactGamertag])
-
-
-    let statusOptions = ["Online", "Offline"];
+    
     useEffect(()=>{
         const data = window.localStorage.getItem("statusStorage");
        if(data !== null) setStatus(data);
@@ -47,6 +47,29 @@ export default function ContactForm(){
         window.localStorage.setItem("statusStorage", status);
     },[status])
 
+    useEffect(()=>{
+        const data = window.localStorage.getItem("generesStorage");
+       if(data !== null) setGeneres(data);
+    },[])
+    useEffect(()=>{
+        window.localStorage.setItem("generesStorage", generes);
+    },[generes])
+
+    useEffect(()=>{
+        const data = window.localStorage.getItem("generesTwoStorage");
+       if(data !== null) setGeneresTwo(data);
+    },[])
+    useEffect(()=>{
+        window.localStorage.setItem("generesTwoStorage", generesTwo);
+    },[generesTwo])
+
+    useEffect(()=>{
+        const data = window.localStorage.getItem("generesThreeStorage");
+       if(data !== null) setGeneresThree(data);
+    },[])
+    useEffect(()=>{
+        window.localStorage.setItem("generesThreeStorage", generesThree);
+    },[generesThree])
 
     function handleImage(e) {
         setImage(e.target.files[0])
@@ -114,11 +137,11 @@ export default function ContactForm(){
 
         <div class="form-control">
             <label for="email" id="label-email">
-                Email:
+                Age:
             </label>
-            <input type="email"
-                   id="email"
-                   placeholder=" Enter your email" 
+            <input type="number"
+                   id="age"
+                   placeholder=" Enter your age" 
                    onChange={(e) => setContactEmail(e.target.value)}/>
         </div>
 
@@ -134,9 +157,7 @@ export default function ContactForm(){
                 <p>{results}</p>
                 </>
             ))}
-            
-            
-            
+
             </div>
         </div>
 
@@ -156,25 +177,53 @@ export default function ContactForm(){
   
         <div class="form-control">
             <label for="role" id="label-role">
-                Games Genres:
+                Top Three Games Genres:
             </label>
              
 
-            <div className="genresSelection" name="role" id="role" onChange={(e) => setContactSelection(e.target.value)}>
-            <input type="radio" value="Male" name="gender" /> Role-play
-            <input type="radio" value="Female" name="gender" /> Survival
-            <input type="radio" value="Other" name="gender" /> FPS
-            <input type="radio" value="Other" name="gender" /> Stragrgy
-            <input type="radio" value="Other" name="gender" /> Racing
-            <input type="radio" value="Other" name="gender" /> Puzzle
-            <input type="radio" value="Other" name="gender" /> MMO
-            <input type="radio" value="Other" name="gender" /> Tactical
-            <input type="radio" value="Other"  /> Open-World
-            <input type="radio" value="Other"  /> Music
-            <input type="radio" value="Other"  /> Puzzle
-            <input type="radio" value="Other"  /> Simulation
+            <div className="genresSelection" name="role" id="role" >
+            <select onChange={(e) => setGeneres(e.target.value)}>
+                <option>RPG</option>
+                <option>Survival</option>
+                <option>MMO</option>
+                <option>FPS</option>
+                <option>Stragrgy</option>
+                <option>Racing</option>
+                <option>Puzzle</option>
+                <option>Tactical</option>
+                <option>Open World</option>
+                <option>Music</option>
+                <option>Simulation</option>
+            </select>
+            <select onChange={(e) => setGeneresTwo(e.target.value)}>
+                <option>RPG</option>
+                <option>Survival</option>
+                <option>MMO</option>
+                <option>FPS</option>
+                <option>Stragrgy</option>
+                <option>Racing</option>
+                <option>Puzzle</option>
+                <option>Tactical</option>
+                <option>Open World</option>
+                <option>Music</option>
+                <option>Simulation</option>
+            </select>
+            <select onChange={(e) => setGeneresThree(e.target.value)}>
+                <option>RPG</option>
+                <option>Survival</option>
+                <option>MMO</option>
+                <option>FPS</option>
+                <option>Stragrgy</option>
+                <option>Racing</option>
+                <option>Puzzle</option>
+                <option>Tactical</option>
+                <option>Open World</option>
+                <option>Music</option>
+                <option>Simulation</option>
+            </select>
             </div>
         </div>
+        
   
         <div class="form-control">
             <label for="comment">

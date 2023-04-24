@@ -5,6 +5,9 @@ export default function Profile() {
     var profileNamePrint = localStorage.getItem("contactNameStorage");
     var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
     var profileStatus = localStorage.getItem("statusStorage");
+    var gameGeneres = localStorage.getItem("generesStorage");
+    var gameGeneresTwo = localStorage.getItem("generesTwoStorage");
+    var gameGeneresThree = localStorage.getItem("generesThreeStorage");
     return (
     <div class="wrapperTwo">
         <div class="left">
@@ -20,10 +23,6 @@ export default function Profile() {
                 <h3>Information</h3>
                 <div class="info_data">
                      <div class="data">
-                        <h4>Email</h4>
-                        <p>{profileEmailPrint}</p>
-                     </div>
-                     <div class="data">
                        <h4>Accounts</h4>
                         <p>Discord:</p>
                         <p>Battle.net:</p>
@@ -32,6 +31,10 @@ export default function Profile() {
                        <h4>Status</h4>
                         <p>{profileStatus}</p>
                   </div>
+                  <div class="data">
+                        <h4>Age</h4>
+                        <p>{profileEmailPrint}</p>
+                     </div>
                 </div>
             </div>
           
@@ -50,16 +53,16 @@ export default function Profile() {
                     </div>
                      <div class="data">
                        <h4>Genres</h4>
-                        <p>role-play-game</p>
-                        <p>survival</p>
-                        <p>FPS</p>
+                        <p>{gameGeneres}</p>
+                        <p>{gameGeneresTwo}</p>
+                        <p>{gameGeneresThree}</p>
                     </div>
                     
                 </div>
                 <h3>Schedule</h3>
                 <div class="projects_data">
                      <div class="data">
-                        <h4>availability</h4>
+                        <h4>Availability</h4>
                         <p>day and time</p>
                      </div>
                 </div>
