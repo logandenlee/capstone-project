@@ -210,6 +210,16 @@ form {
   color: #fff;
 }
 
+.wrapperTwo .leftHome{
+  width: 35%;
+  background: linear-gradient(to right,#9d1b55,#646c6c);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: black;
+}
+
 .wrapperTwo .left img{
   border-radius: 5px;
   margin-bottom: 10px;
@@ -224,6 +234,14 @@ form {
 }
 
 .wrapperTwo .right{
+  width: 65%;
+  background: #b1aeae;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapperTwo .rightHome{
   width: 65%;
   background: #b1aeae;
   padding: 30px 25px;
@@ -469,3 +487,4 @@ border: 1px solid #e4e4e4;
   background-color:blue;
   color: white;
 }
+

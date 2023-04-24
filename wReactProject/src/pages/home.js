@@ -1,27 +1,16 @@
-import bikeData from '../data/friends.json'
-
-export function itemCard(props) {
-    //const items = props.items;
-    return (
-        <div className="card">
-            
-        </div>
-    );
-}
 export default function Home() {
     return (
         <div className="homePage">
-            <h3>Home</h3>
-            <h4>This home page will be filled with public posts</h4>
-            <div className="homeList">
-                {bikeData.map(items => {
-                    return (
-                        <>
-                            
-                        </>
-                    )
-                })}*/
+
+            <div className="wrapperTwo">
+                <div className="leftHome">
+                    <p>Admin</p>
+                </div>
+                <div className="rightHome">
+                    <p>Welcome to our Home Page! Here you will find plenty of information of our website</p>
+                </div>
             </div>
         </div>
     );
 }
+

@@ -3,7 +3,9 @@ import profilePic from '../images/steve.jpg'
 export default function Profile() {
     var profileEmailPrint = localStorage.getItem("contactEmailStorage");
     var profileNamePrint = localStorage.getItem("contactNameStorage");
+    var profileAlias = localStorage.getItem("aliasStorage");
     var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
+    var profileGames = localStorage.getItem("gamesStorage");
     var profileStatus = localStorage.getItem("statusStorage");
     var profilePlaystyle = localStorage.getItem("playstyleStorage");
     var gameGeneres = localStorage.getItem("generesStorage");
@@ -25,8 +27,8 @@ export default function Profile() {
                 <div class="info_data">
                      <div class="data">
                        <h4>Accounts</h4>
-                        <p>Discord:</p>
-                        <p>Battle.net:</p>
+                        <p>{profileAlias}</p>
+
                   </div>
                   <div class="data">
                        <h4>Status</h4>
@@ -44,9 +46,8 @@ export default function Profile() {
                 <div class="projects_data">
                      <div class="data">
                         <h4>Games</h4>
-                        <p>Son of the Forest</p>
-                        <p>Minecraft</p>
-                        <p>Modern Warfare</p>
+                        <p>{profileGames}</p>
+
                      </div>
                      <div class="data">
                        <h4>Playstyle</h4>

@@ -4,9 +4,11 @@ import axios from 'axios';
 export default function ContactForm(){
     const[contactName, setContactName] = useState("");
     const[contactEmail, setContactEmail] = useState("");
+    const[alias, setAlias] = useState("");
     const[contactGamertag, setContactGamertag] = useState("");
     const[image, setImage] = useState("");
     const[status,setStatus] = useState("");
+    const[games, setGames] = useState("");
     const[playstyle, setPlaystyle] = useState("")
     const[generes, setGeneres] = useState("");
     const[generesTwo, setGeneresTwo] = useState("");
@@ -16,6 +18,23 @@ export default function ContactForm(){
 
     let statusOptions = ["Online", "Offline"];
     let playstyleOptions = ["Causal", "competitive"]
+
+    useEffect(()=>{
+        const data = window.localStorage.getItem("aliasStorage");
+       if(data !== null) setAlias(data);
+    }, [])
+    useEffect(()=>{
+        window.localStorage.setItem("aliasStorage", alias);
+    },[alias])
+    
+    
+    useEffect(()=>{
+        const data = window.localStorage.getItem("gamesStorage");
+       if(data !== null) setGames(data);
+    }, [])
+    useEffect(()=>{
+        window.localStorage.setItem("gamesStorage", games);
+    },[games])
     
     useEffect(()=>{
         const data = window.localStorage.getItem("contactNameStorage");
@@ -142,7 +161,7 @@ export default function ContactForm(){
             <input type="text"
                    id="gamertag"
                    placeholder="Alias" 
-                   onChange={(e) => setContactGamertag(e.target.value)}/>
+                   onChange={(e) => setAlias(e.target.value)}/>
         </div>
 
         <div class="form-control">
@@ -258,11 +277,10 @@ export default function ContactForm(){
             <label for="comment">
                 What games would you want others to know you play?
             </label>
- 
-            <textarea name="comment" id="comment"
-                placeholder="Enter your games here"
-                onChange={(e) => setContactComment(e.target.value)}>
-            </textarea>
+            <input type="text"
+                   id="games"
+                   placeholder="Games" 
+                   onChange={(e) => setGames(e.target.value)}/>
         </div>
         
         <nav className="submit-bar">
