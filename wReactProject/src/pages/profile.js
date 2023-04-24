@@ -64,7 +64,9 @@ export default function Profile() {
                 <div class="projects_data">
                      <div class="data">
                         <h4>Availability</h4>
-                        <p>day and time</p>
+                        <p>Monday 18:30 - 22:30</p>
+                        <p>Wednesday 17:30 - 22:30</p>
+                        <p>Saturday 20:00 - 00:00</p>
                      </div>
                 </div>
             </div>

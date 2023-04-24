@@ -117,7 +117,7 @@ export default function ContactForm(){
 
         <div class="form-control">
             <label for="profilePic" id="label-profilePic">
-                Profile Image:
+                Choose a profile image here!
             </label>
             <input type="file"
                    id="profilepic"
@@ -127,7 +127,7 @@ export default function ContactForm(){
 
         <div class="form-control">
             <label for="name" id="label-name">
-                Name:
+                What's your name?
             </label>
             <input type="text"
                    id="name"
@@ -137,27 +137,27 @@ export default function ContactForm(){
 
         <div class="form-control">
             <label for="gamertag" id="label-gamertag">
-                Gamer Tag:
+                What social accounts are you you comfortable being contacted on and their associated IDs?
             </label>
             <input type="text"
                    id="gamertag"
-                   placeholder=" Enter your Gamer Tag" 
+                   placeholder="Alias" 
                    onChange={(e) => setContactGamertag(e.target.value)}/>
         </div>
 
         <div class="form-control">
             <label for="email" id="label-email">
-                Age:
+                What is your age?
             </label>
             <input type="number"
                    id="age"
-                   placeholder=" Enter your age" 
+                   placeholder="Age" 
                    onChange={(e) => setContactEmail(e.target.value)}/>
         </div>
 
         <div class="form-control">
             <label for="role" id="label-role">
-                Status:
+                Enter your status signifying if you're online or offline!
             </label>
 
             <div className="statusSelection" name="role" id="role">
@@ -173,7 +173,7 @@ export default function ContactForm(){
 
         <div class="form-control">
             <label for="role" id="label-role">
-                Playstyle:
+                What is your preferred playstyle?
             </label>
 
             <div className="playstyleSelection" name="role" id="role">
@@ -189,7 +189,7 @@ export default function ContactForm(){
 
         <div class="form-control">
                         <label for="comment">
-                            Time availabitiy:
+                            When are you available?
                         </label>
                         <p>Start Time</p>
                         <input type="time"
@@ -203,12 +203,13 @@ export default function ContactForm(){
   
         <div class="form-control">
             <label for="role" id="label-role">
-                Top Three Games Genres:
+                Select up to 3 of your most preferred genres
             </label>
              
 
             <div className="genresSelection" name="role" id="role" >
             <select onChange={(e) => setGeneres(e.target.value)}>
+                <option>--</option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>
@@ -222,6 +223,7 @@ export default function ContactForm(){
                 <option>Simulation</option>
             </select>
             <select onChange={(e) => setGeneresTwo(e.target.value)}>
+                <option>--</option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>
@@ -235,6 +237,7 @@ export default function ContactForm(){
                 <option>Simulation</option>
             </select>
             <select onChange={(e) => setGeneresThree(e.target.value)}>
+                <option>--</option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>
@@ -253,7 +256,7 @@ export default function ContactForm(){
   
         <div class="form-control">
             <label for="comment">
-                Games played:
+                What games would you want others to know you play?
             </label>
  
             <textarea name="comment" id="comment"
