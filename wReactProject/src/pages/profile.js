@@ -1,7 +1,7 @@
 import profilePic from '../images/steve.jpg'
 
 export default function Profile() {
-    var profileEmailPrint = localStorage.getItem("contactEmailStorage");
+    var profileAge = localStorage.getItem("contactEmailStorage");
     var profileNamePrint = localStorage.getItem("contactNameStorage");
     var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
     var profileStatus = localStorage.getItem("statusStorage");
@@ -34,7 +34,7 @@ export default function Profile() {
                   </div>
                   <div class="data">
                         <h4>Age</h4>
-                        <p>{profileEmailPrint}</p>
+                        <p>{profileAge}</p>
                      </div>
                 </div>
             </div>
