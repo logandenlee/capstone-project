@@ -23,20 +23,20 @@ export default function InventoryMotor(props) {
     return (
         <div className="FriendsListPage" >
             <div className="filter-container">
-                <button value='Friend' onClickCapture={(e) => setTypeSelected(e.target.value)}>All Friends</button>
+                <button value='friend' onClickCapture={(e) => setTypeSelected(e.target.value)}>All Friends</button>
                 <button onClick={handleValue}>Game Changer</button>
                 <select onChange={handleChange}>
-                    <option value='other'>RPG</option>
-                    <option value='other'>Survival</option>
-                    <option>MMO</option>
-                    <option>FPS</option>
-                    <option>Strategy</option>
-                    <option>Racing</option>
-                    <option>Puzzle</option>
-                    <option>Tactical</option>
-                    <option>Open World</option>
-                    <option>Music</option>
-                    <option>Simulation</option>
+                    <option value='rpg'>RPG</option>
+                    <option value='survival'>Survival</option>
+                    <option value='mmo'>MMO</option>
+                    <option value='fps'>FPS</option>
+                    <option value='strategy'>Strategy</option>
+                    <option value='racing'>Racing</option>
+                    <option value='puzzle'>Puzzle</option>
+                    <option value='tactical'>Tactical</option>
+                    <option value='openWorld'>Open World</option>
+                    <option value='music'>Music</option>
+                    <option value='simulation'>Simulation</option>
                 </select>
             </div>
 
