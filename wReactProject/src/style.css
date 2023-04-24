@@ -245,6 +245,7 @@ form {
   width: 65%;
   background: #b1aeae;
   padding: 30px 25px;
+  padding-top: 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -370,6 +371,11 @@ h3 {
 .homePage {
     text-align: center;
     padding-top: 50px;
+}
+
+.homePage .homeTitle {
+  font-size: 50px;
+  text-decoration: underline;
 }
 
 .aboutUsPage {
