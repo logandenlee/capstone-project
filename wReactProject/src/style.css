@@ -414,32 +414,29 @@ h3 {
 
 .bikeName{
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .bikeImage {
-width: 220px;
-height: 220px;
+width: 120px;
+height: 120px;
 border-radius: 3px;
-border: 1px solid #e4e4e4;
+border: 1px solid black;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 35px;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .FriendsListPage{
   margin-left: 100px;
 }
 
-.bikeList2{
-  padding-left: 150px;
-  display:flex;
-}
+
 
 
 .bikeList2Des {
  display: block;
- float: left;
+ float: right;
 }
 
 
@@ -448,6 +445,14 @@ border: 1px solid #e4e4e4;
   flex-basis: 200px;
   margin: 30px 20px;
   display: flexbox;
+  background-color: #e84a5f;
+  text-align: center;
+  border-radius: 10px;
+  border: #2c2d2d;
+  border-style: solid;
+}
+.text-card {
+  padding: 5px;
 }
 
 .card-img-top {
@@ -487,4 +492,3 @@ border: 1px solid #e4e4e4;
   background-color:blue;
   color: white;
 }
-
