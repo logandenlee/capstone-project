@@ -5,6 +5,7 @@ export default function Profile() {
     var profileNamePrint = localStorage.getItem("contactNameStorage");
     var profileGamertagPrint = localStorage.getItem("contactGamertagStorage");
     var profileStatus = localStorage.getItem("statusStorage");
+    var profilePlaystyle = localStorage.getItem("playstyleStorage");
     var gameGeneres = localStorage.getItem("generesStorage");
     var gameGeneresTwo = localStorage.getItem("generesTwoStorage");
     var gameGeneresThree = localStorage.getItem("generesThreeStorage");
@@ -49,7 +50,7 @@ export default function Profile() {
                      </div>
                      <div class="data">
                        <h4>Playstyle</h4>
-                        <p>causal</p>
+                        <p>{profilePlaystyle}</p>
                     </div>
                      <div class="data">
                        <h4>Genres</h4>

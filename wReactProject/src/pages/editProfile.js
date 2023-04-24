@@ -7,6 +7,7 @@ export default function ContactForm(){
     const[contactGamertag, setContactGamertag] = useState("");
     const[image, setImage] = useState("");
     const[status,setStatus] = useState("");
+    const[playstyle, setPlaystyle] = useState("")
     const[generes, setGeneres] = useState("");
     const[generesTwo, setGeneresTwo] = useState("");
     const[generesThree, setGeneresThree] = useState("");
@@ -14,6 +15,7 @@ export default function ContactForm(){
     const[contactComment, setContactComment] = useState("");
 
     let statusOptions = ["Online", "Offline"];
+    let playstyleOptions = ["Causal", "competitive"]
     
     useEffect(()=>{
         const data = window.localStorage.getItem("contactNameStorage");
@@ -46,6 +48,14 @@ export default function ContactForm(){
     useEffect(()=>{
         window.localStorage.setItem("statusStorage", status);
     },[status])
+
+    useEffect(()=>{
+        const data = window.localStorage.getItem("playstyleStorage");
+       if(data !== null) setPlaystyle(data);
+    },[])
+    useEffect(()=>{
+        window.localStorage.setItem("playstyleStorage", playstyle);
+    },[playstyle])
 
     useEffect(()=>{
         const data = window.localStorage.getItem("generesStorage");
@@ -126,11 +136,11 @@ export default function ContactForm(){
         </div>
 
         <div class="form-control">
-            <label for="name" id="label-name">
+            <label for="gamertag" id="label-gamertag">
                 Gamer Tag:
             </label>
             <input type="text"
-                   id="name"
+                   id="gamertag"
                    placeholder=" Enter your Gamer Tag" 
                    onChange={(e) => setContactGamertag(e.target.value)}/>
         </div>
@@ -154,6 +164,22 @@ export default function ContactForm(){
             {statusOptions.map(results =>(
                 <>
                 <input type="radio"  value={results} name="radiovalues" onChange={(e) => setStatus(e.target.value)}/>
+                <p>{results}</p>
+                </>
+            ))}
+
+            </div>
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Playstyle:
+            </label>
+
+            <div className="playstyleSelection" name="role" id="role">
+            {playstyleOptions.map(results =>(
+                <>
+                <input type="radio"  value={results} name="radiovalues" onChange={(e) => setPlaystyle(e.target.value)}/>
                 <p>{results}</p>
                 </>
             ))}
@@ -187,7 +213,7 @@ export default function ContactForm(){
                 <option>Survival</option>
                 <option>MMO</option>
                 <option>FPS</option>
-                <option>Stragrgy</option>
+                <option>Strategy</option>
                 <option>Racing</option>
                 <option>Puzzle</option>
                 <option>Tactical</option>
@@ -200,7 +226,7 @@ export default function ContactForm(){
                 <option>Survival</option>
                 <option>MMO</option>
                 <option>FPS</option>
-                <option>Stragrgy</option>
+                <option>Strategy</option>
                 <option>Racing</option>
                 <option>Puzzle</option>
                 <option>Tactical</option>
@@ -213,7 +239,7 @@ export default function ContactForm(){
                 <option>Survival</option>
                 <option>MMO</option>
                 <option>FPS</option>
-                <option>Stragrgy</option>
+                <option>Strategy</option>
                 <option>Racing</option>
                 <option>Puzzle</option>
                 <option>Tactical</option>
