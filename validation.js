@@ -6,8 +6,6 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add('form__message--${type}');
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
@@ -45,46 +43,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function encryptPassword(password) {
+    const salt = generateRandomSalt(); 
+    const hash = crypto.subtle.digest("SHA-256", new TextEncoder().encode(password + salt)); 
+    return {salt: salt, hash: hash};
+  }
+  
+  function generateRandomSalt() {
+    return crypto.getRandomValues(new Uint8Array(16)).join(''); // Generate a random 16-byte salt
+  }
+  
+function comparePasswords(password, salt, storedHash) {
+    const hash = crypto.subtle.digest("SHA-256", new TextEncoder().encode(password + salt)); 
+    return hash === storedHash; 
+  }
+
 /*
-form.addEventListener('submit', (e) => {
-    let messages = []
-
-    if(username.value === '' || username.value == null) {
-        messages.push('Please enter a username.')
-    }
-
-    if(username.value.length < 6 || username.value.length > 20) {
-        messages.push('Username must be 6-20 characters long.')
-    }
-
-    if (!/^[a-zA-Z0-9]+$/.test(username)) {
-        messages.push('Username must only contain alphanumeric characters.');
-    }
-
-    if (password.value.length < 6 || password.value.length > 20) {
-        messages.push('Password must be 6-20 characters long.')
-    }
-
-    if (password.value === 'password') {
-        messages.push("Please enter a different password.")
-    }
-
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(', ')
-    }
-}
-)
-
-
 function validate() {
     
-    var username=document.getElementById("username").value;
-    var password=document.getElementById("password").value;
+    const usernameInput = document.querySelector('#username');
+    const passwordInput = document.querySelector('#password');
 
-    username = username.trim();
-    password = password.trim();
+    usernameInput = usernameInput.trim();
+    passwordInput = passwordInput.trim();
     
+    const encryptedPassword = encryptPassword(password);
+
+    if (comparePasswords(password, encryptedPassword.salt, storedHash)) {
+        // password matches, perform login
+    }
 
 
     else if (!/^[a-zA-Z0-9]+$/.test(username)) {
@@ -100,15 +87,3 @@ function validate() {
     }
 }
 */
-
-
-/*
-function login(username, password) {
-    // Sanitize username and password input
-    username = username.trim();
-    password = password.trim();
-
-    // Perform login logic
-    // ...
-  }
-  */
