@@ -16,5 +16,6 @@ Below are the attachments to our final report that describes the concepts of thi
 5. “npm start” should execute the live-server scripts and allow you to open it via browser
 6. The project should be accessible that easily!
 ### Sorce Code & Scripts
-Source code for the applications is located within the folder name [wReactProject](wReactProject).
+Source code for the applications is located within the folder name [wReactProject](wReactProject).\
+Branches within Git: Main and Tarek's Branch
 
