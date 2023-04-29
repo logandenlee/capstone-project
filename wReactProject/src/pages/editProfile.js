@@ -228,7 +228,7 @@ export default function ContactForm(){
 
             <div className="genresSelection" name="role" id="role" >
             <select onChange={(e) => setGeneres(e.target.value)}>
-                <option>--</option>
+                <option></option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>
@@ -242,7 +242,7 @@ export default function ContactForm(){
                 <option>Simulation</option>
             </select>
             <select onChange={(e) => setGeneresTwo(e.target.value)}>
-                <option>--</option>
+                <option></option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>
@@ -256,7 +256,7 @@ export default function ContactForm(){
                 <option>Simulation</option>
             </select>
             <select onChange={(e) => setGeneresThree(e.target.value)}>
-                <option>--</option>
+                <option></option>
                 <option>RPG</option>
                 <option>Survival</option>
                 <option>MMO</option>

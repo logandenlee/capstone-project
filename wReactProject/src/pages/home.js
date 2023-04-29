@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className="homePage">
             <div className="homeTitle">
-            WELCOME TO GAME CHANGER
+            
             </div>
             <div className="wrapperTwo">
                 <div className="leftHome">
